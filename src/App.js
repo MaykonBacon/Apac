@@ -1,25 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+
+import './global.css';
+
+import Routes from './routes';
+//JSX -  Javascript e XML
+//Componente - funcão que retorna XML/HTML
+//Propriedades == Retorna um atributo para o componente
+//Estado =  Informação que vai ser mantida pelo componente
+//Imutabilidade = Sobrepõe o valor do estado
 
 function App() {
+  //Array [valor, funçãoDeAtualização]
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Hello Maykon
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes />
   );
 }
 
